@@ -1,0 +1,455 @@
+%\documentclass[UTF8]{article}
+\documentclass[UTF8]{ctexart}
+\usepackage[cm]{fullpage} %-- to squeeze maximum space
+%\usepackage{a4wide}
+%\usepackage{fullpage}
+\usepackage{amsmath, verbatim}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+% \usepackage{xeCJK}
+\setCJKmainfont[BoldFont=Songti SC Bold, ItalicFont=STKaiti]{STSong}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmonofont{STFangsong}
+
+%\usepackage{marvosym}
+%\documentclass{moderncv}
+%\usepackage{fontawesome}
+\textheight=12in
+\pagestyle{empty}
+
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+\def\bull{\vrule height .8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt}
+\begin{verse}
+        \textbf{#1} #2
+\end{verse}
+}
+\newcommand{\lineunder}{\vspace*{-8pt} \\
+\hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{\large \vspace*{12pt}{\Large \hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\seconder}[1]{\vspace*{12pt}{\Large \hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{\vspace*{6pt}{\normalsize \textbf{#1} (#2)\\
+\underline{\textbf{\emph{#3}}}\\
+}}
+\newcommand{\website}[3]{{\normalsize \textbf{#1}\\
+\underline{\textbf{\emph{#3}}}\\
+}}
+\newcommand{\courses}[1]{\vspace*{12pt}\normalsize \textbf{#1}\\
+}    %New command, for courses
+\newcommand{\contact}[3]{
+    \vspace*{-8pt}
+    \begin{center}
+            {\Huge \scshape {#1} }\\
+            \large #2 \lineunder {\centering{#3}}
+    \end{center}
+    \vspace*{-8pt}
+}
+\newenvironment{achievements}{
+\begin{list}
+        {$\bullet$}{\topsep 0pt
+        \itemsep 0pt}}{\vspace*{4pt}
+\end{list}
+}
+\newenvironment{courseworks}{
+\begin{list}
+        {$\bullet$}{\topsep 0pt
+        \itemsep -2pt}}{\vspace*{4pt}
+\end{list}
+}
+\newenvironment{summaries}{
+\begin{list}
+        {$-$}{\topsep 3pt
+        \itemsep 0pt \vspace*{2pt}}}{\vspace*{4pt}
+\end{list}
+}
+
+\usepackage{url}
+%\urlstyle{tt}
+%\ifpdf
+%  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+%  \hypersetup{
+%    pdfauthor   = \FileAuthor,%
+%    pdftitle    = \FileTitle,%
+%    pdfsubject  = \FileSubject,%
+%    pdfkeywords = \FileKeyWords,%
+%    pdfcreator  = \LaTeX,%
+%    pdfproducer = \LaTeX}
+%\else
+%  \usepackage[dvips]{hyperref}
+%\fi
+
+\newcommand{\schoolwithcourses}[3]{\normalsize \textbf{#1} #2 #3\\
+
+%#4 $\bullet$  Selected Coursework:\\
+\vspace*{5pt} }
+
+\newcommand{\schools}[3]{\large \textbf{#1} #2\\
+
+%#4 $\bullet$  Selected Coursework:\\
+\vspace*{5pt} }
+
+\newcommand{\school}[4]{ \textbf{#1} #2 $\bullet$ #3\\
+#4 \\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small \smallskip \vspace*{-25pt}
+
+\contact{程路熙} {\includegraphics[width=50pt]{WechatIMG.jpeg}} {185 8113 0460 $\bullet$ chengluxi1818@163.com \\ \centering\includegraphics[width=13pt]{Linkedin.png}  \url{https://www.linkedin.com/pub/luxi-cheng/68/30/9a1}\\ \includegraphics[width=13pt]{Github.png}    \url{https://github.com/chengluxi1818}}
+
+% Kun Zheng's Address: 13041 Detroit Ct, Chino, CA 91710
+% He Lei's Address: 1843 Seville Way, San Jose, CA 95131
+% Dong Yujie's Address: 1702 Tahoe Dr., Milpitas, CA 95035
+% Fan Yang's Address: 2187 Bray Ave., Santa Clara, CA 95050
+
+% ================================================= Objective ============================================
+%\vspace{20pt}
+%\header{Objective}
+%Looking for a position as a Software Engineer in CyberCoders.
+
+% ================================================= Summary =======================================
+\header{概况}
+\begin{summaries}
+%This website is a personal project, it is mainly for my very interests in audio signal processing and enthusiasm in music. The purpose of this website is to take a piece of sound from the user who surfs on this website and try to analysis the sound, and also put on some sound effect and then play it. The website is still in development. For the front-end, the website is developed based on CCS rules, and for the audio processing program on it, is developed in Java by utilizing Java Sound API and Java Applet.
+  %\item Skillful and experienced with comprehensive utilization with C/C++ core technology (C++11), and strong understanding in data structures. Proficient with IDEs such as Eclipse, Microsoft Visual Studio.
+    \item Java核心技术实际应用的丰富经验，对数据结构有深入了解。
+    %\item Multi-threading development experience in Java with different packages(Collections, Data Structures, etc). Web site development experiences in Java web interface(Java Applet).
+    \item 5年以上Java开发经验，多线程Java开发的应用。熟悉Java Web接口并应用于网页开发。
+    %\item Experienced with Java interfaces (Java Sound API, etc.), hands-on experience with scaled Java Application development.
+    \item 熟练掌握Java Sound API等接口并应用于个人Java音频识别项目开发。
+    %\item Strong understanding in object-oriented programming, algorithms. Extreme interests in signal processing related programming.
+    \item 对面向对象编程和算法有一定的认识，并热衷于和信号处理相关的编程实践。
+    %\item Additional web development experiences in front-end UI design with HTML/HTML5, CSS, PHP, and experience in online animations applications(Processing 2).
+    \item 有一定的前端后端开发经验，熟练运用HTML5+CSS、Javascript、PHP和SQL。
+    \item 熟练运用如Eclipse, Visual Studio等编译环境。
+
+\end{summaries}
+
+% ================================================= Technical Skills =======================================
+% Software Engineer Version
+% Changed on 6/8/2015
+\header{技能}
+\begin{achievements}
+    \item \textbf{编程语言:}               \hspace*{75pt}      Java, C/C++, Javascrip, Python, PHP, Assembly, Matlab, SQL
+    \item \textbf{操作系统:}               \hspace*{75pt}       Windows, UNIX, Mac OS
+    \item \textbf{编程软件:}               \hspace*{75pt}       Eclipse, Visual Studio, Matlab, 微信web开发者工具, Sublime
+    \item \textbf{前端设计:}        	     \hspace*{75pt}      HTML5, CSS
+    \item \textbf{编程接口:}               \hspace*{75pt}       Java Sound API, Java Applet, Processing 2
+    \item \textbf{信号处理:}       	     \hspace*{75pt}      Adobe Audition, Blepo(Image Processing Library for C/C++)
+    \item \textbf{其他应用:}      	     \hspace*{75pt}       Git, Virtual Box, VMWare, Latex
+
+%    \item \textbf{Hardwares:}   \hspace*{94pt}                  Bandpass High-order Filter IC, A/D acquisition
+\end{achievements}
+
+% ================================================= Education ============================================================
+\header{教育背景}
+%% Do not mention GPA
+\schools{Clemson University[美国]}
+ {\\电子工程及计算机工程硕士[毕业日期: 2013年12月]}
+% $\bullet$ Cumulative Graduate GPA: 3.28/4.0}{}
+
+\schools{上海大学[上海]}
+ {\\电气工程机器自动化本科[毕业日期: 2011年7月]}
+%$ \bullet$ Cumulative Undergraduate GPA: 3.14/4.0}{}
+
+% Change before 1/24/2014
+%\\\textit{Relevant Coursework:}}
+%        \quad Analysis of Linear Systems $\cdot$ Analysis of Robot Systems $\cdot$ Digital Image Processing $\cdot$ Embedded Computing  $\cdot$ Computer Network Security $\cdot$ Computer Communications $\cdot$ Instrumentation
+
+% ================================================= Professional Experience =======================================
+% Used to use "Graduate Assistantship", changed to "Professional Experience", this needs to be further described
+\header{网站项目}
+\website{Digica.cn}{}{设计和开发}
+\begin{achievements}
+%This website is a personal project, it is mainly for my very interests in audio signal processing and enthusiasm in music. The purpose of this website is to take a piece of sound from the user who surfs on this website and try to analysis the sound, and also put on some sound effect and then play it. The website is still in development. For the front-end, the website is developed based on CCS rules, and for the audio processing program on it, is developed in Java by utilizing Java Sound API and Java Applet.
+    %\item Personal website with the purpose of experiencing audio signal processing and music analysis.
+    \item 个人网站项目，主要用于对信号处理和音乐分析类相关的程序应用的编写进行了解和熟悉。
+    %\item UI design and test by HTML + CSS, animation with Porcessing 2 Library with Java Applet.
+    \item 运用HTML5+CSS和Processing 2接口相结合进行前端设计，同时使用Java Applet接口进行动画的制作与生成。
+    %\item Records audio from client's microphone with Java Sound API.
+    \item 运用Java Sound API对接用户端的音频输入并进行编码处理。
+    %\item Analysis audio information and interprets with Fast Fourier Transform(FFT).
+    \item 分析音频信息并运用傅里叶变换进行频谱分析。结合动画接口对频谱进行演示，并显示最集中使用的单一频率。
+    %\item Playbacks audio with animation of the audio's frequency spectrum in real time. Hightlights most significant frequency for pitch detection.
+    %\item Experience in audio formatting with Pulse-code Modulation codec. Implemented sound effect algorithms such as Reverse, Echo and Delay based on raw audio information.
+    \item 对音频进行了脉冲编码调制，并对源信号进行加以反向，回声和延迟等算法处理。\\ \vspace*{6pt}
+    \emph{视频地址：} \url{http://v.youku.com/v_show/id_XMjY5MjkyMTY1Mg}
+\end{achievements}
+
+\newpage
+\vspace*{-20pt}
+
+\website{\textbf{重庆土石方资讯微信公众号}}{}{开发、设计和测试}
+\begin{achievements}
+    \item 创业项目，旨在为重庆地区土石方从业人员提供信息资讯的平台和相关应用。
+    \item 推出货运卡车扫描二维码记账功能，替代传统手动记账，实现微信直接查账，并达到施工方和货运方的信息对称。
+    \item 基于微信平台的网页开发，运用HTML5+CSS，Javascript/Jquery及微信API实现二维码扫描、表格上传和显示等功能。
+    \item 运用PHP和AJAX进行前后端交互和数据库交互。
+    \item 使用MySQL数据库进行数据的设计和创建及数据的存储与提取。
+\end{achievements}
+
+% =========================================== Programming Coursework ==================================
+% Test Development Engineer
+% Changed before 2/4/2014
+%\header{Software Courseworks}
+%    \quad Embedded Computing(Data Compression) $\cdot$ Computer Communications(C in Unix) $\cdot$ Analysis of Robot Systems(Kalman Filters) $\cdot$ Computer Network Security(Stack Overflows) $\cdot$ Digital Image Processing(C/C++)
+
+\seconder{其他项目}
+
+\courses{借口生成器[项目: HTML+CSS和Jquery的前端应用]}
+\begin{courseworks}
+    \item	个人兴趣项目，旨在为广大的上班族们生成请假理由，好为工作中的暂时离开给上司提供合理的借口。
+    \item	运用HTML5+CSS进行网页基本设计，Javascript和Jquery相结合生成简单动画。
+\end{courseworks}
+
+% #3 Computer Communications
+\courses{图像处理[项目: 图像处理算法的运用]}
+\begin{courseworks}
+    %\item   Developed algorithms in digital image processing and computer vision in C/C++. Manipulated images with standard algorithms, evaluated the strengths and weakness of various approaches.
+    \item	使用Java研发和运用一系列图像处理算法，并对类似的算法进行评估和比较。
+    %\item   Extended algorithms with projective geometry, convolution, Fourier analysis and other transforms, pixel-based processing, segmentation, texture, detection stereo, and motion.
+    \item	对各个图像处理算法进行几何学对比和傅里叶分析，过程中用到基于单点的处理法、分割处理法、材质处理法、立体检测及动态检测。
+\end{courseworks}
+
+% #1 Embedded Computing
+\courses{嵌入式计算机应用[项目: 驱动开发, 数据压缩]}
+\begin{courseworks}
+    %\item   Manipulate data in embedded systems in C combined with Assembly under Linux VM environment.
+    \item	熟练掌握了嵌入式系统中C和汇编语言在Linux虚拟系统中的使用。
+    %\item   Implemented image data displaying based on OS's boot process, real-time scheduling.
+    \item	使用系统的boot process和实时进程管理对图片进行展示。
+    %\item   Developed device drivers under Linux for image and audio displaying.
+    \item	开发和测试了在Linux系统中的图片和音频驱动程序。
+    %\item   Implemented image codecs(RLE, LZW, Huffman and JPEG) using C for both compression and decompression.
+    \item	使用C对一系列图片压缩编码和解码（RLE, LZW, Huffman和JPEG）进行了重新编译和实践。
+\end{courseworks}
+
+% #2 Computer Communications
+\courses{计算机通信[项目: Unix系统的网络通讯协议]}
+\begin{courseworks}
+    %\item   Developed Unix network sockets transmission protocol in C/C++.
+    \item	使用Java对Unix的网络通讯协议进行了重运用。
+    %\item   Implemented point-to-point TCP/IP messenger and receiver on browser.
+    \item	在浏览器上实现了点对点TCP/IP的传输协议。
+    %\item   Interface TCP/IP protocol with Sliding Window Algorithm for transmission efficiency improvement.
+    \item	使用滑窗算法以提高TCP/IP的传输效率。
+\end{courseworks}
+
+% #6 Practice of Microprocessor
+%\courses{Practise of Microprocessor[Project: Keyboard Controlling System]}
+%\begin{courseworks}
+%    \item   Implemented keyboard controlling system based on Intel 8086 Microprocessor using Assembly.
+%% 21908 Chen's ID Number
+%\end{courseworks}
+
+% #7 Microcontroller Application
+%\courses{Microcontroller Application[Project: LED Array Displaying System]}
+%\begin{courseworks}
+%    \item   Implemented LED array displaying system based on Intel MCS51 Microcontroller using Assembly and C.
+%% 21908 Chen's ID Number
+%\end{courseworks}
+
+% #4 Analysis of Robot Systems
+%\courses{机器人系统分析[项目: 过滤器运用, 机器人存活游戏]}
+%\begin{courseworks}
+%    %\item   Use C/C++ to implemented nonlinear model fitting and root finding in tracking systems.
+%    \item	追踪系统中的非线性模型的过滤器（如Kalman过滤器，颗粒过滤器等）的运用。
+%    %\item   Implemented Kalman filter, extended Kalman filter, particle filter, recursive Bayesian estimation and hidden Markov models for accurate model tracking and noise filtering.
+%    %\item   Use C to combine Kalman filter model tracking with survival strategy for robot surviving game.
+%    \item	机器人存活游戏的编写和算法优化以实现存活时间的最长化。
+%\end{courseworks}
+
+% #5 Computer Network Security
+\courses{计算机网络安全[项目: 变形病毒, 堆栈溢出]}
+\begin{courseworks}
+    %\item   VPN and sniffer utilization and analysis based on Wireshark.
+    \item	VPN的实现和使用Wireshark的网络数据监听。
+    %\item   Buffer overflow implementation on stack using C combined with Assembly interpretation.
+    \item	堆栈溢出的实现及分析和修改优化。
+    %\item   Virus and Polymorphic virus implementation with low-level Assembly programming for compiled .exe file. Achieve virus's self cloning and polymorphism.
+    \item	.exe文件的病毒和自变形病毒的分析及应用，实现了病毒的自身克隆和变异的功能。
+\end{courseworks}
+
+% =========================================== Hardware Coursework ====================================
+%\header{Hardware Courseworks}
+%    \quad Analog Electronics $\cdot$ Digital Electronics $\cdot$ Signals and Systems Analysis $\cdot$ Principple of Microcomputer $\cdot$ Electronic System Design $\cdot$ Microcontroller Application $\cdot$ Power Electronics
+
+% =========================================== Software and Hardware Experience ==================================
+% Electrical Engineer Version
+% Changed on 2/4/2014
+%\header{Hardware and Software Experience}
+%\begin{achievements}
+%  \item \textbf{Digital Hardwares:}  \hspace*{18pt}     Tektronix Oscilloscope, PIC controller, Microcontroller debugger
+%  \item \textbf{Analog Hardwares:}   \hspace*{17pt}     High-order Filter IC, A/D acquisition board
+%  \item \textbf{Softwares:}          \hspace*{61pt}     C and C++(3 yrs), Assembly(3 yrs), Matlab(4 yrs), Unix(2 yrs), \LaTeX(2 yrs)
+%  \item \textbf{Design Tools:}     \hspace*{45pt}       Simulink(3 yrs), Multisim(3 yrs), Ultiboard(1 yr), AutoCAD(1 yr)
+%  \item \textbf{Optical Sensors:}    \hspace*{31pt}     Optical Fiber, Phototransistor
+%
+%\end{achievements}
+
+%\header{Hardware and Software Experience}
+%\begin{achievements}
+%    \item \textbf{Design Tools:}     \hspace*{46pt}       Simulink(3 yrs), Multisim(3 yrs), Ultiboard(1 yr), AutoCAD(1 yr)
+%    \item \textbf{Test Equipments:}  \hspace*{25pt}     Tektronix Oscilloscope, Microcontroller debugger
+%    \item \textbf{Hardwares:}   \hspace*{56pt}     High-order Filter IC, A/D acquisition board, PIC controller
+%    \item \textbf{Programming Tools:}  \hspace*{11pt}     C and C++(3 yrs), Matlab(4 yrs), Unix(2 yrs), Assembly(3 yrs), \LaTeX(2 yrs)
+%    \item \textbf{Optical Sensors:}    \hspace*{32pt}     Optical Fiber, Phototransistor
+%\end{achievements}
+
+\seconder{职业背景}
+\employer{Virtual Power Systems}{2014年2月 - 2016年4月}{软件工程师}
+\begin{achievements}
+% Before the change 1/24/2014
+%\item Developed an optical-based sensor for magnetic microfiber. Validated the sensor system with Multisim and work on
+%experiment implementations. Introduced modulation and demodulation approach for noise reduction.
+%\item Implemented real-time sensor data acquisition with xPC-target. Achieved the microfiber?s position information
+%reconstruction by comparing real-time data to image processing-based results.
+%\item Utilized AutoCAD with laser printer to design and set up frameworks using acrylic sheets. Designed circuitry and
+%completed the PCB layout.
+
+% Changed on 2/4/2014
+%	\item Developed an optical-based sensor for electro-magnetic microfiber actuator's position detection. Achieved signal transformation between position information and electricity. Validated the sensor with actual electrical components and work on experiment implementations.
+%    \item Designed, optimized sensor's electrical signal processing circuit and utilized high-speed oscilloscopes for debugging. Included IC-based signal amplification and rectification sections. Introduced modulation and demodulation approaches based on concept of Radio Frequency Signal Processing and high-order filter ICs for noise reduction. Validated circuit simulation with Matlab Simulink and Multisim. Achieved AC power splitting for component supplying. Completed PCB design, circuit components selection and PCB layout.
+%    \item Implemented real-time sensor data acquisition with xPC-target. Programmed the microfiber's position reconstruction based on real-time data and image processing. Used the output for the electro-magnetic microfiber's control implementation.
+%    \item Designed sensor's physical frameworks and converted into 2-dimensional graph using AutoCAD. Utilized laser printer  with fixed-thickness acrylic sheets to layout framework parts. Set up and stabilized sensor's framework, acquired it with 3-dimensional measurable movement for robust signal detection.
+
+    %\item Product design, development and test in Linux environment. Python implementation of communication protocol I2C, SPI.
+    \item  Linux环境下的产品设计，研发及测试。Java对I2C和SPI传输协议的实现。
+    %\item Firmware framework design and development with C in ARM architecture based Real-time OS. Implemented CAN, I2C and ADC communication between Real-time OS based and Linux based micro-controllers.
+    \item ARM架构中底层软件架构的设计和开发，数据在实时系统中的CAN、I2C和ADC传输及处理。
+    %\item Matlab scripting on Agilent/Chroma Electrical Loads for power-loading automatic test cases with SCPI commands through Serial communication.
+    \item	SCPI语言在Agilent和Chroma智能电阻器的自动化编程和数据交互处理。
+    %\item Hardware design and development including power electronics, electrical circuitry design and test, mechanical design.
+    \item	一部分PCB板的和电器原件选择与测试，和电路与机械原件设计、测试与生产。
+\end{achievements}
+
+
+\employer{Clemson University}{2011年9月 - 2013年12月}{研究型助教}
+\begin{achievements}
+    % Before the change 1/24/2014
+%\item Developed an optical-based sensor for magnetic microfiber. Validated the sensor system with Multisim and work on
+%experiment implementations. Introduced modulation and demodulation approach for noise reduction.
+%\item Implemented real-time sensor data acquisition with xPC-target. Achieved the microfiber?s position information
+%reconstruction by comparing real-time data to image processing-based results.
+%\item Utilized AutoCAD with laser printer to design and set up frameworks using acrylic sheets. Designed circuitry and
+%completed the PCB layout.
+
+% Changed on 2/4/2014
+	%\item Developed an optical-based sensor for electro-magnetic microfiber actuator's position detection. Achieved signal transformation between position information and electricity.
+	\item 微型磁能纤维能动机构的光电传感器的研发与设计，最终实现光信号对位置信息的体现和电信号的转换。
+    %\item Designed, optimized sensor's electrical signal processing circuit. Included IC-based signal amplification and rectification sections. Introduced modulation and demodulation approaches based on concept of Radio Frequency Signal Processing and high-order filter ICs for noise reduction.
+    \item 设计并优化系统线路，运用AM调制和解调对干扰进行过滤。
+    %\item Implemented real-time sensor data acquisition with xPC-target. Programmed the microfiber's position reconstruction based on real-time data and image processing. Used the output for the electro-magnetic microfiber's control implementation.
+    \item 研发实时性位置信息的拾取和位置信息的重塑算法，并使用该信息对磁能纤维能动机构进行闭环控制。
+%    \item Designed sensor's physical frameworks and converted into 2-dimensional graph using AutoCAD. Utilized laser printer  with fixed-thickness acrylic sheets to layout framework parts. Set up and stabilized sensor's framework, acquired it with 3-dimensional measurable movement for robust signal detection.
+
+\end{achievements}
+
+% ===============================================Before 2/3/2014===========================================
+% Software Engineer Version
+%\header{Software and Hardware Experience}
+%\begin{achievements}
+%  \item \textbf{Programming Tools:}  \hspace*{25pt}     Matlab(4 yrs), C and C++(3 yrs), Assembly(3 yrs), Simulink(3 yrs), \LaTeX(2 yrs)
+%  \item \textbf{Circuit Design Tools:}  \hspace*{21pt}  Multisim(3 yrs), Ultiboard(1 yr)
+%  \item \textbf{Hardwares:} \hspace*{67pt}              Filter ICs, Op Amps ICs, Phototransistors, Optical Fibers
+%  \item \textbf{Skills:}  \hspace*{92pt}                PCB Soldering, AutoCAD(1 yr), 3Dmax(1 yr), Blepo(image processing) \end{achievements}
+
+% Electrical Engineer Version
+%\header{Hardware and Software Experience}
+%\begin{achievements}
+%%  \item \textbf{Programming:}        \hspace*{40pt}                   Network communication, Network security, Image processing, Kalman filter, Data compression
+%%  \item \textbf{Programming Tools:}  \hspace*{11pt}     Assembly(3 yrs), Matlab(4 yrs), Simulink(3 yrs), C and C++(3 yrs), \LaTeX(2 yrs)
+%  \item \textbf{Digital Hardwares:}  \hspace*{18pt}                   PIC controller, Microcontroller debugger, Altera FPGA, Oscilloscope
+%  \item \textbf{Analog Hardwares:}   \hspace*{17pt}                   High-order Filter IC, A/D acquisition board
+%  \item \textbf{Optical Sensors:}    \hspace*{31pt}                  Optical Fiber, Phototransistor
+%  \item \textbf{Design Tools:}     \hspace*{45pt}                   Simulink(3 yrs), Multisim(3 yrs), Ultiboard(1 yr), AutoCAD(1 yr)
+%%  \item \textbf{Circuit Design:}     \hspace*{36pt}                   Multisim(3 yrs), Ultiboard(1 yr), PCB Soldering
+%  \item \textbf{Softwares:}  \hspace*{61pt}     Assembly(3 yrs), Matlab(4 yrs), C and C++(3 yrs), \LaTeX(2 yrs), Image processing,
+%      \hspace*{116pt} Network security, Network communication, Data compression
+%%  \item \textbf{Programming Tools:}  \hspace*{11pt}     Assembly(3 yrs), Matlab(4 yrs), Simulink(3 yrs), C and C++(3 yrs), \LaTeX(2 yrs)
+%%  \item \textbf{Programming:}        \hspace*{40pt}                   Image processing, Network security, Network communication, Data compression%Kalman filter, Data compression
+%%  \item \textbf{Engineering Skills:}  \hspace*{19pt}    AutoCAD, Altera FPGA, Oscilloscope
+%\end{achievements}
+%==========================================================================================================================
+
+
+% ================================================== Publications ==============================================
+%\header{Publications}
+%\begin{achievements}
+%        \item Harshwardhan Karve, \textbf{Luxi Cheng}, Richard E. Groff, ``Preliminary Design of a Model-Based Position Controller for Magnetic Microfibers", \textit{2013 IEEE Conference on Decision and Control, Florence, Italy}, pp. 3499-3504
+%        \item Harshwardhan Karve, \textbf{Luxi Cheng}, Richard E. Groff, ``Position Control of Magnetic Microfibers using a Approximate Model", \textit{2013 IEEE American Control Conference, Washington, DC}, received
+%\end{achievements}
+
+% ================================================= Awards ======================================================
+%$\cdot$ Computer Systems Engineering
+%\header{Awards}
+%\begin{achievements}
+%\item \textbf{Silver Medal.} The 3rd Shanghai University Robot Contest, specially in Tracking Robot (April 2008)
+%\item \textbf{Certification.} National CAD Network Training Application (November 2008)
+%\item \textbf{Silver Prize Scholarship.} 2008/2009 Academic Year of Shanghai University (October 2009)
+%%\item \textbf{Excellent Award.} National Electronic Keyboard Match, Teenage Group (May 2006)
+%%\item \textbf{Bronze Medal.} City of Chongqing Electronic Keyboard Match, Teenage Group. (September 2005)
+%\end{achievements}
+
+%% ======================================= Activities and Leadership ==============================================
+%\header{Activities and Leadership}
+%\employer{Class President[Shanghai, China]}{2009 - 2011}{Founder and Organizer}
+%\begin{achievements}
+%        \item Led a one-day trip to 2010 Shanghai EXPO, served as a tour guide and helped students in class gain a basic understanding of the 2010 Shanghai EXPO.
+%	 \item Facilitated tutoring between students and pre-exam study sessions.
+%\end{achievements}
+%
+%\employer{Director of Publicity Department in English Club at Shanghai University[Shanghai, China]}{2007 -  2009}{Organizer and Director}
+%\begin{achievements}
+%	 \item Designed flyers and posters for each activity, organized club advertisement each week, assigned club members with advertising jobs and corresponding areas for each activity.
+%        \item Held English communication meetings each week and proposed topic plans.
+%%	 \item Participated in English-speaking lectures and speeches.
+%\end{achievements}
+
+% ============================================== Social Practice =======================================================
+% Used to use "Work Experience", Now changed to "Social Practise"
+%\header{Social Practice}
+%\employer{2010 Shanghai EXPO [Shanghai, China]}{June 2010}{Volunteer}
+%\begin{achievements}
+%	\item Served in a team as a tour guide and live narrator in Public Join-in Pavilion, introduced and helped tourists with interaction facilities, managed population stream to avoid overload. Received ``Excellent Team" award.
+%	\item Member of the ``Excellent Team''.
+
+%\end{achievements}
+
+% Can be deleted
+%\employer{Information Department for Student Employment Office [Shanghai, China]}{2010 - 2011}{Director}
+%\begin{achievements}
+%	\item Advertised campus career fair activities, contacted with company representatives and organized employment instruction programs to help students find jobs.
+%	\item Met recruiters and discussed about students' internship and employment schedules.
+%\end{achievements}
+%
+%\employer{Hisense Group, Inc [Shanghai, China]}{October 2008}{Shop Assistant}
+%\begin{achievements}
+%	\item Served as a television salesclerk.
+%	\item Gave away flyers and provided discount information to attract consumers.
+%\end{achievements}
+
+
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%$\cdot$ Programming tools: & Matlab(5 yrs), C and C++(4 yrs), Simulink(3 yrs), Labview(3 yrs), Latex(1 yr) \\
+%$\cdot$ Robotics Software: & Robot Operating System(ROS)(1 yr), Player/stage(1 yr), Blepo(image processing) \\
+%$\cdot$ Robots: & AR. Drone Quadrotor, Khepera III, Pioneer 3-AT \\
+%$\cdot$ Robot Sensors: & Accelerometer, LRF, IR Sensor, Ultrasonic Sensor, Joystick, Camera, Wifi card\\
+%$\cdot$ Bioreactor Sensors: & Mass flow controller, Off-gas sensor, Dissolved oxygen sensor, Temp and PH sensor\\
+%$\cdot$ CAD/CAM: & Solidworks(3 yrs), AutoCAD(3 yrs), UG(3 yrs),  Inventor(2 yrs), Mastercam(1 yr) \\
+%$\cdot$ Engineering Skills: & PLC Programming,  CNC Operation, Micro controller \& Circuit, Pneumatic System
+%\end{tabular}
+
+\end{document}
